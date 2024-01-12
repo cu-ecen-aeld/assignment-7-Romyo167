@@ -1,5 +1,5 @@
 default: 
-	 gcc -o  aesdsocket  aesdsocket.c
+	${CC}  -o  aesdsocket  aesdsocket.c
 all: 
 	${CC} -o aesdsocket  aesdsocket.c
 clean:
