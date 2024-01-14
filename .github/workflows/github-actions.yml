@@ -11,7 +11,7 @@ jobs:
         steps:
           - uses: actions/checkout@v3
             with:
-              clean: false
+              clean: true
               submodules: 'recursive'
           - uses: webfactory/ssh-agent@v0.5.4
             with:
