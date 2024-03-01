@@ -1,0 +1,246 @@
+29670 13:18:56.035621 --- Starting bitbake server pid 29670 at 2024-01-13 13:18:56.035572 ---
+29670 13:18:56.036622 Started bitbake server pid 29670
+29670 13:18:56.036885 Entering server connection loop
+29670 13:18:56.037068 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+29670 13:18:56.038247 Processing Client
+29670 13:18:56.038436 Connecting Client
+29670 13:18:56.039006 Running command ['setFeatures', [2, 1]]
+29670 13:18:56.040393 Command Completed
+29670 13:18:56.040720 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'LOGNAME': 'rnosir', 'HOME': '/home/rnosir', 'BBPATH': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'USER': 'rnosir', 'PATH': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/scripts:/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/bin:/home/rnosir/.vscode-server/bin/8b617bd08fd9e3fc94d14adb8d358b56e3f72314/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/Docker/host/bin:/snap/bin:/home/rnosir/Embedded-Linux-Course-1/toolchain/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu/bin/:/home/rnosir/Embedded-Linux-Course-1/toolchain/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu/bin/:', 'LC_ALL': 'en_US.UTF-8', 'COLORTERM': 'truecolor', 'WSL2_GUI_APPS_ENABLED': '1', 'TERM_PROGRAM_VERSION': '1.85.1', 'WSL_DISTRO_NAME': 'Ubuntu', 'NAME': 'DESKTOP-FG7NNSC', 'VSCODE_GIT_ASKPASS_NODE': '/home/rnosir/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/node', 'LANG': 'C.UTF-8', 'WSL_INTEROP': '/run/WSL/961_interop', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'WAYLAND_DISPLAY': 'wayland-0', 'GIT_ASKPASS': '/home/rnosir/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass.sh', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-d281b4a02c.sock', 'DISPLAY': ':0', 'SHLVL': '1', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up', 'VSCODE_GIT_ASKPASS_MAIN': '/home/rnosir/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass-main.js', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'HOSTTYPE': 'x86_64', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', 'OLDPWD': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'TERM_PROGRAM': 'vscode', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-5b6e46aa-6748-4a09-923e-e42e57779c28.sock', '_': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/bin/bitbake-layers'}, ['/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/bin/bitbake-layers', 'show-layers']]
+29670 13:19:00.000826 Command Completed
+29670 13:19:00.003377 Running command ['parseConfiguration']
+29670 13:19:00.005127 Command Completed
+29670 13:19:00.005645 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+29670 13:19:00.006189 Command Completed
+29670 13:19:00.006725 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+29670 13:19:00.007295 Command Completed
+29670 13:19:00.016551 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+29670 13:19:00.017414 Command Completed
+29670 13:19:00.017770 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+29670 13:19:00.018234 Command Completed
+29670 13:19:00.021526 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+29670 13:19:00.021974 Command Completed
+29670 13:19:00.022261 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+29670 13:19:00.022661 Command Completed
+29670 13:19:00.024709 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+29670 13:19:00.025035 Command Completed
+29670 13:19:00.025273 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+29670 13:19:00.025499 Command Completed
+29670 13:19:00.029420 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+29670 13:19:00.029841 Command Completed
+29670 13:19:00.030112 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+29670 13:19:00.030384 Command Completed
+29670 13:19:00.032372 Running command ['getLayerPriorities']
+29670 13:19:00.032990 Command Completed
+29670 13:19:00.036143 Running command ['clientComplete']
+29670 13:19:00.036383 Command Completed
+29670 13:19:00.037362 Processing Client
+29670 13:19:00.037475 Disconnecting Client
+29670 13:19:00.037749 No timeout, exiting.
+29670 13:19:00.138188 Exiting
+29670 13:19:00.142426 Original lockfile contents: ['29670\n']
+29670 13:19:00.142800 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+29717 13:19:00.778786 --- Starting bitbake server pid 29717 at 2024-01-13 13:19:00.778748 ---
+29717 13:19:00.780689 Started bitbake server pid 29717
+29717 13:19:00.781186 Entering server connection loop
+29717 13:19:00.781489 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+29717 13:19:00.782595 Processing Client
+29717 13:19:00.782686 Connecting Client
+29717 13:19:00.783186 Running command ['setFeatures', [2, 1]]
+29717 13:19:00.784060 Command Completed
+29717 13:19:00.785284 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'LOGNAME': 'rnosir', 'HOME': '/home/rnosir', 'BBPATH': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'USER': 'rnosir', 'PATH': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/scripts:/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/bin:/home/rnosir/.vscode-server/bin/8b617bd08fd9e3fc94d14adb8d358b56e3f72314/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/Docker/host/bin:/snap/bin:/home/rnosir/Embedded-Linux-Course-1/toolchain/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu/bin/:/home/rnosir/Embedded-Linux-Course-1/toolchain/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu/bin/:', 'LC_ALL': 'en_US.UTF-8', 'COLORTERM': 'truecolor', 'WSL2_GUI_APPS_ENABLED': '1', 'TERM_PROGRAM_VERSION': '1.85.1', 'WSL_DISTRO_NAME': 'Ubuntu', 'NAME': 'DESKTOP-FG7NNSC', 'VSCODE_GIT_ASKPASS_NODE': '/home/rnosir/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/node', 'LANG': 'C.UTF-8', 'WSL_INTEROP': '/run/WSL/961_interop', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'WAYLAND_DISPLAY': 'wayland-0', 'GIT_ASKPASS': '/home/rnosir/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass.sh', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-d281b4a02c.sock', 'DISPLAY': ':0', 'SHLVL': '2', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up', 'VSCODE_GIT_ASKPASS_MAIN': '/home/rnosir/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass-main.js', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'HOSTTYPE': 'x86_64', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', 'OLDPWD': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'TERM_PROGRAM': 'vscode', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-5b6e46aa-6748-4a09-923e-e42e57779c28.sock', '_': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/bin/bitbake-layers'}, ['/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/bin/bitbake-layers', 'add-layer', '../meta-aesd']]
+29717 13:19:01.325912 Command Completed
+29717 13:19:01.326895 Running command ['parseConfiguration']
+29717 13:19:01.330099 Command Completed
+29717 13:19:01.331969 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+29717 13:19:01.332611 Command Completed
+29717 13:19:01.333087 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+29717 13:19:01.345877 Command Completed
+29717 13:19:01.346271 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+29717 13:19:01.346932 Command Completed
+29717 13:19:01.347227 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+29717 13:19:01.347635 Command Completed
+29717 13:19:01.352330 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+29717 13:19:01.353039 Command Completed
+29717 13:19:01.353856 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+29717 13:19:01.354325 Command Completed
+29717 13:19:01.357440 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+29717 13:19:01.357899 Command Completed
+29717 13:19:01.358413 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+29717 13:19:01.358856 Command Completed
+29717 13:19:01.361620 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+29717 13:19:01.362033 Command Completed
+29717 13:19:01.362307 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+29717 13:19:01.362709 Command Completed
+29717 13:19:01.364810 Running command ['clientComplete']
+29717 13:19:01.365077 Command Completed
+29717 13:19:01.366486 Processing Client
+29717 13:19:01.366681 Disconnecting Client
+29717 13:19:01.367032 No timeout, exiting.
+29717 13:19:01.467612 Exiting
+29717 13:19:01.473424 Original lockfile contents: ['29717\n']
+29717 13:19:01.477962 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+29728 13:19:02.153739 --- Starting bitbake server pid 29728 at 2024-01-13 13:19:02.153694 ---
+29728 13:19:02.154943 Started bitbake server pid 29728
+29728 13:19:02.155313 Entering server connection loop
+29728 13:19:02.155533 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+29728 13:19:02.156656 Processing Client
+29728 13:19:02.156741 Connecting Client
+29728 13:19:02.157126 Running command ['setFeatures', [2, 1]]
+29728 13:19:02.157294 Command Completed
+29728 13:19:02.158290 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'LOGNAME': 'rnosir', 'HOME': '/home/rnosir', 'BBPATH': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'USER': 'rnosir', 'PATH': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/scripts:/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/bin:/home/rnosir/.vscode-server/bin/8b617bd08fd9e3fc94d14adb8d358b56e3f72314/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/Docker/host/bin:/snap/bin:/home/rnosir/Embedded-Linux-Course-1/toolchain/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu/bin/:/home/rnosir/Embedded-Linux-Course-1/toolchain/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu/bin/:', 'LC_ALL': 'en_US.UTF-8', 'COLORTERM': 'truecolor', 'WSL2_GUI_APPS_ENABLED': '1', 'TERM_PROGRAM_VERSION': '1.85.1', 'WSL_DISTRO_NAME': 'Ubuntu', 'NAME': 'DESKTOP-FG7NNSC', 'VSCODE_GIT_ASKPASS_NODE': '/home/rnosir/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/node', 'LANG': 'C.UTF-8', 'WSL_INTEROP': '/run/WSL/961_interop', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'WAYLAND_DISPLAY': 'wayland-0', 'GIT_ASKPASS': '/home/rnosir/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass.sh', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-d281b4a02c.sock', 'DISPLAY': ':0', 'SHLVL': '2', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up', 'VSCODE_GIT_ASKPASS_MAIN': '/home/rnosir/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass-main.js', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'HOSTTYPE': 'x86_64', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', 'OLDPWD': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'TERM_PROGRAM': 'vscode', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-5b6e46aa-6748-4a09-923e-e42e57779c28.sock', '_': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/bin/bitbake'}, ['/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/bin/bitbake', 'core-image-aesd']]
+29728 13:19:02.686137 Command Completed
+29728 13:19:02.687158 Running command ['getVariable', 'BBINCLUDELOGS']
+29728 13:19:02.687554 Command Completed
+29728 13:19:02.687762 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+29728 13:19:02.688125 Command Completed
+29728 13:19:02.688303 Running command ['getSetVariable', 'BB_CONSOLELOG']
+29728 13:19:02.688729 Command Completed
+29728 13:19:02.688919 Running command ['getSetVariable', 'BB_LOGCONFIG']
+29728 13:19:02.689154 Command Completed
+29728 13:19:02.692780 Running command ['getUIHandlerNum']
+29728 13:19:02.693106 Command Completed
+29728 13:19:02.693304 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+29728 13:19:02.693512 Command Completed
+29728 13:19:02.693689 Running command ['getVariable', 'BB_DEFAULT_TASK']
+29728 13:19:02.693909 Command Completed
+29728 13:19:02.694058 Running command ['setConfig', 'cmd', 'build']
+29728 13:19:02.694237 Command Completed
+29728 13:19:02.694382 Running command ['buildTargets', ['core-image-aesd'], 'build']
+29728 13:19:02.694511 Command Completed
+/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/meta/classes/sanity.bbclass:626: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  import distutils.sysconfig
+/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/meta/classes/sanity.bbclass:626: DeprecationWarning: The distutils.sysconfig module is deprecated, use sysconfig instead
+  import distutils.sysconfig
+29728 13:19:22.906178 Processing Client
+29728 13:19:22.906337 Disconnecting Client
+29728 13:19:22.906644 No timeout, exiting.
+29728 13:19:23.007403 Exiting
+29728 13:19:23.012834 Original lockfile contents: ['29728\n']
+29728 13:19:23.013678 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+30183 13:20:04.692349 --- Starting bitbake server pid 30183 at 2024-01-13 13:20:04.692329 ---
+30183 13:20:04.693440 Started bitbake server pid 30183
+30183 13:20:04.693792 Entering server connection loop
+30183 13:20:04.693969 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+30183 13:20:04.695420 Processing Client
+30183 13:20:04.695542 Connecting Client
+30183 13:20:04.695880 Running command ['setFeatures', [2, 1]]
+30183 13:20:04.696071 Command Completed
+30183 13:20:04.696851 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'LOGNAME': 'rnosir', 'HOME': '/home/rnosir', 'BBPATH': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'USER': 'rnosir', 'PATH': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/scripts:/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/bin:/home/rnosir/.vscode-server/bin/8b617bd08fd9e3fc94d14adb8d358b56e3f72314/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/Docker/host/bin:/snap/bin:/home/rnosir/Embedded-Linux-Course-1/toolchain/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu/bin/:/home/rnosir/Embedded-Linux-Course-1/toolchain/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu/bin/:', 'LC_ALL': 'en_US.UTF-8', 'COLORTERM': 'truecolor', 'WSL2_GUI_APPS_ENABLED': '1', 'TERM_PROGRAM_VERSION': '1.85.1', 'WSL_DISTRO_NAME': 'Ubuntu', 'NAME': 'DESKTOP-FG7NNSC', 'VSCODE_GIT_ASKPASS_NODE': '/home/rnosir/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/node', 'LANG': 'C.UTF-8', 'WSL_INTEROP': '/run/WSL/961_interop', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'WAYLAND_DISPLAY': 'wayland-0', 'GIT_ASKPASS': '/home/rnosir/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass.sh', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-d281b4a02c.sock', 'DISPLAY': ':0', 'SHLVL': '1', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up', 'VSCODE_GIT_ASKPASS_MAIN': '/home/rnosir/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass-main.js', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'HOSTTYPE': 'x86_64', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', 'OLDPWD': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'TERM_PROGRAM': 'vscode', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-5b6e46aa-6748-4a09-923e-e42e57779c28.sock', '_': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/bin/bitbake-layers'}, ['/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/bin/bitbake-layers', 'show-layers']]
+30183 13:20:05.154076 Command Completed
+30183 13:20:05.155012 Running command ['parseConfiguration']
+30183 13:20:05.156989 Command Completed
+30183 13:20:05.157367 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+30183 13:20:05.157732 Command Completed
+30183 13:20:05.158031 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+30183 13:20:05.158516 Command Completed
+30183 13:20:05.170030 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+30183 13:20:05.170553 Command Completed
+30183 13:20:05.171082 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+30183 13:20:05.171443 Command Completed
+30183 13:20:05.173642 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+30183 13:20:05.173972 Command Completed
+30183 13:20:05.174245 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+30183 13:20:05.174585 Command Completed
+30183 13:20:05.179593 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+30183 13:20:05.180109 Command Completed
+30183 13:20:05.180417 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+30183 13:20:05.180928 Command Completed
+30183 13:20:05.182902 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+30183 13:20:05.183226 Command Completed
+30183 13:20:05.183456 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+30183 13:20:05.183703 Command Completed
+30183 13:20:05.185288 Running command ['getLayerPriorities']
+30183 13:20:05.185682 Command Completed
+30183 13:20:05.187411 Running command ['clientComplete']
+30183 13:20:05.187661 Command Completed
+30183 13:20:05.188948 Processing Client
+30183 13:20:05.189266 Disconnecting Client
+30183 13:20:05.189664 No timeout, exiting.
+30183 13:20:05.290294 Exiting
+30183 13:20:05.294347 Original lockfile contents: ['30183\n']
+30183 13:20:06.756219 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+30218 13:20:07.928645 --- Starting bitbake server pid 30218 at 2024-01-13 13:20:07.928621 ---
+30218 13:20:07.930216 Started bitbake server pid 30218
+30218 13:20:07.930865 Entering server connection loop
+30218 13:20:07.931060 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+30218 13:20:07.931734 Processing Client
+30218 13:20:07.931851 Connecting Client
+30218 13:20:07.932295 Running command ['setFeatures', [2, 1]]
+30218 13:20:07.932542 Command Completed
+30218 13:20:07.933483 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'LOGNAME': 'rnosir', 'HOME': '/home/rnosir', 'BBPATH': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'USER': 'rnosir', 'PATH': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/scripts:/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/bin:/home/rnosir/.vscode-server/bin/8b617bd08fd9e3fc94d14adb8d358b56e3f72314/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/Docker/host/bin:/snap/bin:/home/rnosir/Embedded-Linux-Course-1/toolchain/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu/bin/:/home/rnosir/Embedded-Linux-Course-1/toolchain/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu/bin/:', 'LC_ALL': 'en_US.UTF-8', 'COLORTERM': 'truecolor', 'WSL2_GUI_APPS_ENABLED': '1', 'TERM_PROGRAM_VERSION': '1.85.1', 'WSL_DISTRO_NAME': 'Ubuntu', 'NAME': 'DESKTOP-FG7NNSC', 'VSCODE_GIT_ASKPASS_NODE': '/home/rnosir/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/node', 'LANG': 'C.UTF-8', 'WSL_INTEROP': '/run/WSL/961_interop', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'WAYLAND_DISPLAY': 'wayland-0', 'GIT_ASKPASS': '/home/rnosir/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass.sh', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-d281b4a02c.sock', 'DISPLAY': ':0', 'SHLVL': '2', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up', 'VSCODE_GIT_ASKPASS_MAIN': '/home/rnosir/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass-main.js', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'HOSTTYPE': 'x86_64', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', 'OLDPWD': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'TERM_PROGRAM': 'vscode', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-5b6e46aa-6748-4a09-923e-e42e57779c28.sock', '_': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/bin/bitbake-layers'}, ['/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/bin/bitbake-layers', 'add-layer', '../meta-aesd']]
+30218 13:20:08.404541 Command Completed
+30218 13:20:08.405294 Running command ['parseConfiguration']
+30218 13:20:08.407068 Command Completed
+30218 13:20:08.407477 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+30218 13:20:08.407801 Command Completed
+30218 13:20:08.408282 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+30218 13:20:08.408659 Command Completed
+30218 13:20:08.418074 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+30218 13:20:08.418671 Command Completed
+30218 13:20:08.418993 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+30218 13:20:08.419302 Command Completed
+30218 13:20:08.422295 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+30218 13:20:08.422704 Command Completed
+30218 13:20:08.422948 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+30218 13:20:08.423195 Command Completed
+30218 13:20:08.425334 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+30218 13:20:08.425715 Command Completed
+30218 13:20:08.426013 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+30218 13:20:08.426412 Command Completed
+30218 13:20:08.427758 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+30218 13:20:08.428138 Command Completed
+30218 13:20:08.428594 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+30218 13:20:08.428920 Command Completed
+30218 13:20:08.430839 Running command ['clientComplete']
+30218 13:20:08.431006 Command Completed
+30218 13:20:08.431908 Processing Client
+30218 13:20:08.431994 Disconnecting Client
+30218 13:20:08.432367 No timeout, exiting.
+30218 13:20:08.532863 Exiting
+30218 13:20:08.537013 Original lockfile contents: ['30218\n']
+30218 13:20:09.264622 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+30269 13:20:09.628015 --- Starting bitbake server pid 30269 at 2024-01-13 13:20:09.627986 ---
+30269 13:20:09.630801 Started bitbake server pid 30269
+30269 13:20:09.631238 Entering server connection loop
+30269 13:20:09.631532 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+30269 13:20:09.631792 Processing Client
+30269 13:20:09.632180 Connecting Client
+30269 13:20:09.632736 Running command ['setFeatures', [2, 1]]
+30269 13:20:09.632907 Command Completed
+30269 13:20:09.633775 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'LOGNAME': 'rnosir', 'HOME': '/home/rnosir', 'BBPATH': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'USER': 'rnosir', 'PATH': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/scripts:/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/bin:/home/rnosir/.vscode-server/bin/8b617bd08fd9e3fc94d14adb8d358b56e3f72314/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/Docker/host/bin:/snap/bin:/home/rnosir/Embedded-Linux-Course-1/toolchain/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu/bin/:/home/rnosir/Embedded-Linux-Course-1/toolchain/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu/bin/:', 'LC_ALL': 'en_US.UTF-8', 'COLORTERM': 'truecolor', 'WSL2_GUI_APPS_ENABLED': '1', 'TERM_PROGRAM_VERSION': '1.85.1', 'WSL_DISTRO_NAME': 'Ubuntu', 'NAME': 'DESKTOP-FG7NNSC', 'VSCODE_GIT_ASKPASS_NODE': '/home/rnosir/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/node', 'LANG': 'C.UTF-8', 'WSL_INTEROP': '/run/WSL/961_interop', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'WAYLAND_DISPLAY': 'wayland-0', 'GIT_ASKPASS': '/home/rnosir/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass.sh', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-d281b4a02c.sock', 'DISPLAY': ':0', 'SHLVL': '2', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up', 'VSCODE_GIT_ASKPASS_MAIN': '/home/rnosir/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass-main.js', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'HOSTTYPE': 'x86_64', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', 'OLDPWD': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167', 'TERM_PROGRAM': 'vscode', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-5b6e46aa-6748-4a09-923e-e42e57779c28.sock', '_': '/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/bin/bitbake'}, ['/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/bitbake/bin/bitbake', 'core-image-aesd']]
+30269 13:20:10.193073 Command Completed
+30269 13:20:10.193994 Running command ['getVariable', 'BBINCLUDELOGS']
+30269 13:20:10.194470 Command Completed
+30269 13:20:10.194731 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+30269 13:20:10.195049 Command Completed
+30269 13:20:10.195305 Running command ['getSetVariable', 'BB_CONSOLELOG']
+30269 13:20:10.195775 Command Completed
+30269 13:20:10.196057 Running command ['getSetVariable', 'BB_LOGCONFIG']
+30269 13:20:10.196341 Command Completed
+30269 13:20:10.199162 Running command ['getUIHandlerNum']
+30269 13:20:10.199464 Command Completed
+30269 13:20:10.199814 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+30269 13:20:10.200219 Command Completed
+30269 13:20:10.200564 Running command ['getVariable', 'BB_DEFAULT_TASK']
+30269 13:20:10.200939 Command Completed
+30269 13:20:10.201252 Running command ['setConfig', 'cmd', 'build']
+30269 13:20:10.201583 Command Completed
+30269 13:20:10.201826 Running command ['buildTargets', ['core-image-aesd'], 'build']
+30269 13:20:10.201934 Command Completed
+/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/meta/classes/sanity.bbclass:626: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  import distutils.sysconfig
+/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/poky/meta/classes/sanity.bbclass:626: DeprecationWarning: The distutils.sysconfig module is deprecated, use sysconfig instead
+  import distutils.sysconfig
+30269 13:20:30.318206 Processing Client
+30269 13:20:30.318318 Disconnecting Client
+30269 13:20:30.318686 No timeout, exiting.
+30269 13:20:30.419166 Exiting
+30269 13:20:30.426009 Original lockfile contents: ['30269\n']
+30269 13:20:30.427379 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/rnosir/embedded-inux-course-2/assignment-3/assignments-3-and-later-Romyo167/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>

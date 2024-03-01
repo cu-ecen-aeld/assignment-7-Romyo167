@@ -1,0 +1,13 @@
+WARNING: You are running bitbake under WSLv2, this works properly but you should optimize your VHDX file eventually to avoid running out of storage space
+ERROR:  OE-core's config sanity checker detected a potential misconfiguration.
+    Either fix the cause of this error or at your own risk disable the checker (see sanity.conf).
+    Following is the list of potential problems / advisories:
+
+    Fetcher failure for URL: 'https://yoctoproject.org/connectivity.html'. URL https://yoctoproject.org/connectivity.html doesn't work.
+    Please ensure your host's network is configured correctly.
+    Please ensure CONNECTIVITY_CHECK_URIS is correct and specified URIs are available.
+    If your ISP or network is blocking the above URL,
+    try with another domain name, for example by setting:
+    CONNECTIVITY_CHECK_URIS = "https://www.example.com/"    You could also set BB_NO_NETWORK = "1" to disable network
+    access if all required sources are on local disk.
+

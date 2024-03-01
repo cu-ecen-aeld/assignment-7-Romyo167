@@ -237,11 +237,9 @@ int main(int argc, char * argv[]) {
 
             if(prev_sec >= sec - 10)
             {
-                pthread_mutex_lock(&lock);
                 fputs("timestamp:", msgfile);
                 fputs(outstr, msgfile);
                 fputs("\n", msgfile);
-                pthread_mutex_unlock(&lock); 
             } 
             prev_sec = sec;
             fclose(msgfile);
