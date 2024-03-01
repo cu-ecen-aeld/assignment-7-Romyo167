@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 assignment7
-=======
-assignment6-yocto
->>>>>>> assignemnt-6-yocto/main
